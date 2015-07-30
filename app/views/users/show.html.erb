@@ -1,0 +1,56 @@
+<div class="container text-center">
+  <div id="myBackLinkRow" class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1 text-left">
+      <%= link_to "Back to Accomodation List", accomodations_path %>
+    </div>
+  </div>
+  <div id="myHeaderRow" class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <h1>
+        My profile
+      </h1>
+      <p>
+        Welcome
+      </p>
+    </div>
+  </div>
+  <div id="myPersonalDataRow" class="row">
+    <%= render "show_personal_data" %>
+  </div>
+  <div id="myBookingsRow" class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div id="myBookings">
+        <div id="bookingsBox" class="card-block shadowed-box">
+          <h3>My Bookings</h3>
+          <%= render "show_renter_bookings" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myOwnedAccomodationsRow" class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div id="ownedAccomodationsBox" class="card-block shadowed-box">
+        <h3>My accomodations</h3>
+         <%= render "show_owned_accomodations" %>
+      </div>
+    </div>
+  </div>
+  <div id="myAddAccomodationRow" class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div id="addNewAccomodationBox" class="card-block shadowed-box">
+        <h3>Add a new accomodation</h3>
+        <%= render "create_new_accomodation_form" %>
+      </div>
+    </div>
+  </div>
+  <div id="myReviewsRow" class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div id="userReviews">
+        <div id="favorites-cities-box" class="card-block shadowed-box">
+          <h3>My reviews</h3>
+          <%= render "show_user_reviews" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

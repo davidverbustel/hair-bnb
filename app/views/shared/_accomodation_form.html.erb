@@ -1,0 +1,10 @@
+<%= simple_form_for(@accomodation, html: { multipart: true }) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :address  %>
+  <%= f.input :description %>
+  <%= f.input :accomodates %>
+  <%= f.input :night_rate %>
+  <%= f.button :submit %>
+<% end %>
+<p><%= link_to "(or go back to my profile)", user_path(current_user) %></p>
+
