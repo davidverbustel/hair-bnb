@@ -3,6 +3,9 @@ source 'https://rails-assets.org' # required to download raisl-assets-underscore
 
 # Additional gemfiles for Heroku
 ruby '2.2.2'
+
+gem 'figaro'
+
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 
