@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org' # required to download raisl-assets-underscore
 
+
+gem 'activeadmin', '~> 1.0.0.pre1'
+
+
 # Additional gemfiles for Heroku
 ruby '2.2.2'
 
