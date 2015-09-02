@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 source 'https://rails-assets.org' # required to download raisl-assets-underscore
 
+# Rails admin
+gem 'rails_admin'
+
 # Additional gemfiles for Heroku
 ruby '2.2.2'
 
